@@ -1,0 +1,30 @@
+/* pages/devmap/devmap.wxss */
+.imgclass{
+  width:100%;
+  height:15%;
+  position:fixed;
+  bottom:0; 
+} 
+
+.hinttextclass{
+  font-size: 1em;
+  color: #333333;
+  font-family: PingFangSC-Regular;
+  position: fixed;
+  left: 7%;
+  z-index: 1;
+  align-content: space-around;
+  display:block;
+  white-space: pre-wrap;
+  bottom: 2%; 
+} 
+.whitesmclass{
+  font-size: 0.9em; 
+  color: #fff;  
+  font-family: PingFangSC-Regular; 
+}
+.whitebgclass{
+  font-size: 2em;
+  color: #fff; 
+  font-family: PingFangSC-Regular; 
+}  

@@ -1,0 +1,20 @@
+/* pages/contact_service/contactservice.wxss */
+.whiteshowclass{
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  height: 30%;
+  margin-top: 5vw;
+  text-align: center;
+  border: 1px dashed #C8D2DE;
+}
+.blue_text_middl{
+ font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #5D9BE0;
+}
+.grey_text_mid{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #999999;
+}

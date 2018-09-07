@@ -1,0 +1,13 @@
+<template name="list">
+  <view class='whitesmallback' > 
+        <text class='blacksmalltext1'>{{title}} : </text>
+        <text class='greysmalltext'>{{msg}}</text>
+  </view>
+   <view class='greyline' style='margin-left:3%;'></view> 
+</template>
+<view style='width:{{width}}px;height:{{height}}px;'>
+    <view  style='margin-top:2%;'></view>
+    <view wx:for="{{list}}" wx:key="{{index}}" style='background:#fff;'> 
+        <template is="list" data="{{...item}}" ></template>  
+    </view>
+</view>

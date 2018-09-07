@@ -1,0 +1,94 @@
+<!-- 购物车界面 -->
+<view class="line"></view>
+<view style="width:{{width}}px;height:{{height}}px;"> 
+  <!-- 没有购物商品界面 -->
+  <view class="white-back" hidden="{{ishave}}" >
+    <view class="columnclass" > 
+          <text class="nogoods-text"  >还没点菜的</text>
+          <text class="nogoods-text" >快去选些好吃的吧</text>
+          <button size="mini" type="warn" style="margin-top:5%;">去吃吃喝喝</button> 
+    </view> 
+  </view>
+
+  <!-- 商品订单 -->
+  <view class="white-back" style="height:auto;" hidden="{{!ishave}}">
+      <view class="columnclass" > 
+           <!-- 标题 --> 
+          <text class="fix-title white-back" >你已点了2个菜</text>
+          <text class="nogoods-text" style="text-align:left;padding:2%;">你已点了2个菜</text>
+           <!-- 已点商品列表 -->
+          <view wx:for="{{car_goods}}" wx:key="{{index}}">
+            <template is="car-goods" data="{{...item,...screensize}}"></template>
+          </view>
+    </view> 
+  </view>
+  <!-- 为您推荐 -->
+  <template is="class" data="{{...recommed,...screensize }}"></template>
+  <!-- 占位 -->
+  <view style="width:{{width}}px;height:{{height * 0.15}}px;"></view>
+   <!-- 结算导航栏 --> 
+  <view style="position:fixed;bottom:0%;">
+    <!-- 横线 -->
+      <view class="line"></view> 
+        <view class="rowlayout white-back" style="justify-content:space-around;width:{{width}}px;height:auto;">
+            <!-- 全选操作 -->
+            <view  class="rowlayout" style="width:{{width * 0.2}}px;height:{{height * 0.1}}px;">
+              <image src="{{car.selall}}"  style="width:{{width * 0.06}}px;height:{{width * 0.06}}px;"></image>
+              <text style="margin-left:10px;">全选</text>
+            </view>
+            <!-- 合计运算 --> 
+            <text>合计:<text>¥100</text></text> 
+            <!-- 结算按钮 --> 
+            <button type="warn" size="mini" style="margin:0;">结算</button>
+        </view>
+  </view> 
+</view>
+ 
+<!-- 每个分类的模板 -->
+<template name="class"> 
+ <!-- 标题 -->
+   <view catchtap="controlOpen" class="title-back blacksmalltext1" style="font-weight:bold;font-family:'微软雅黑';">{{title}}</view>
+    <view class="rowlayout" style="flex-wrap:wrap;width:{{width}}px;justify-content:space-between;">
+        <view wx:for="{{allgoods}}" wx:key="{{index}}">
+          <view catchtap="openshop" class="blue-back" style="margin-top:2px;width:{{(width - 2) / 2}}px;height:{{height * 0.5}}px;">
+              <!-- 商品图片 -->
+              <view class="red-back" style="width:100%;height:75%">
+                
+              </view>
+              <view class="columnclass" style="justify-content:space-around;width:100%;height:25%">
+                <!-- 商品标题 -->
+                <text class="goods-text" style="color:#0B0B0B">蛋炒饭</text>
+                <!-- 商品描述 -->
+                <text class="goods-text" style="color:#B4B4B4">超级好吃</text>
+                <!-- 商品价格 -->
+                <text class="goods-text" style="color:#EB5852">¥38.9</text>
+              </view> 
+          </view>  
+        </view>
+  </view>
+</template>
+
+<!-- 每个商品的模板 -->
+<template name="car-goods">
+ <!-- 横线 -->
+   <view class="line"></view> 
+    <view class="rowlayout" style="width:{{width}}px;height:{{height * 0.2}}px;"> 
+        <!-- 商品信息 -->
+        <view>
+            <image src="{{goodsinfo.selall}}"  style="width:{{width * 0.06}}px;height:{{width * 0.06}}px;"></image>
+          <view>
+            <image src="{{goodsinfo.goodimage}}"  style="width:{{width * 0.06}}px;height:{{width * 0.06}}px;"></image>
+            <text></text>
+          </view>
+        </view> 
+        <!-- 商品数量与编辑 -->
+        <view>
+          <!-- 减少 -->
+          <text></text>
+          <!-- 数量 -->
+          <text></text>
+          <!-- 增加 -->
+          <text></text>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,249 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  background: rgb(239, 241, 244)
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background: #DDDDDD;
+}
+.bluesmalltext{
+  font-size: 15px;
+  color: #FFF;
+}
+.blacksmalltext{
+  font-size: 15px;
+  color: #000;
+}
+.smalltext{
+  font-size: 12px;
+  color: #fff;
+}
+.gerysmalltext{
+  font-size: 12px;
+  color: #fff;
+}
+.columnclass{
+   display: flex;
+   flex-direction:column; 
+}
+.bluebigtext{
+ font-size: 45px;
+  color: #FFF;
+  font-family: 700;
+}
+.rowview{
+   display: flex;
+   flex-direction:row;
+}
+.columnlayout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.rowlayout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.classvs{
+  font-family: 700;
+}
+.classvs::after{
+  filter: blur(5px);
+}
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx; 
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.userinfo-avataroval {
+  width: 180rpx;
+  height: 180rpx; 
+  border-radius: 50%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.userinfo-nickname {
+  margin-top: 10px;
+  color: #fff;
+} 
+.whitetextsmall{
+  color: #fff;
+  font-size: 0.8em;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.margin-topsmall{
+  margin-top: 2%;
+}
+.margin-topmiddle{
+  margin-top: 3%;
+}
+.margin-topbig{
+  margin-top: 5%;
+}
+.whitesmallback{
+  background:#fff;
+  padding:3%;
+}
+.blacksmalltext1{
+  font-family: PingFangSC-Medium;
+  color: #333333; 
+  font-size: 0.8em; 
+}
+.buttonpressclass{ 
+  background:#00C450; 
+  color: white;
+  border-radius: 1.7em;
+  font-size: 1em;
+  margin-left: 3%;
+  margin-right: 3%;
+  width:94%; 
+}
+.greysmalltext-right{
+  font-family: PingFangSC-Medium;
+  color: #999999;
+  position: absolute;
+  font-size: 0.7em;
+  right: 3%;
+}
+.greysmalltext{
+  color: #999999;
+   font-family: PingFangSC-Medium;
+  font-size: 0.8em;
+}
+.greyline{
+  width: 100%;
+  height: 1px;
+  background: #E4E4E4;
+}
+.black-br-text{
+  font-family: PingFangSC-Medium;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top:5%;
+} 
+.pinkbigtext{
+  font-family: PingFangSC-Medium;
+  color:#FF8181;
+  font-size: 2em;
+  font-weight: 500;
+}
+.inputclass{
+  font-size: 13px; 
+}
+.foot_btn_green{
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  border-radius: 0;
+  background: #3FB837;
+}
+.buttonblueclass{
+  width: 90%;  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  font-size: 12px;
+  background-color:#3C82DB;
+  color: #FFFFFF;
+}
+.buttongreyclass{
+  width: 90%;  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  font-size: 12px;
+  background-color:#DCDCDC;
+  color: #FFFFFF;
+}
+.greytextsmall{
+  font-family: PingFangSC-Medium;
+  color: #999999;
+  font-size: 12px; 
+}
+.lefttextclass{
+  position: fixed;
+  left: 5%;
+  bottom: 5%;
+  color: #3C82DB;
+  font-size: 12px; 
+}
+.righttextclass{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: #3C82DB;
+  font-size: 12px;
+}
+.sendcodeclass{
+  position: fixed;
+  right:10%;
+  padding: 5px;
+  border: 1px solid  #3C82DB;
+  color:#3C82DB;
+  border-radius: 20px; 
+  font-size: 10px;
+}  
+.redbigtext{
+  font-family: PingFangSC-Medium;
+  color:#FF5A4A;
+  font-size: 2em;
+  font-weight: 500;
+}
+.blacksmalltext{
+ color: #333333;
+  font-family: PingFangSC-Medium;
+  position: absolute;
+  font-weight: 700;
+  font-size: 0.8em;
+  right: 3%;
+}
+.box-shadow-white{ 
+  border:#fff solid 2px;
+} 
+.back-white{
+  background: #fff;
+}
+.img-small{
+  width: 10%;
+  height: 20%;
+}
+.red-back{
+  background: red;
+}
+.blue-back{
+ background: blue;
+}
+.yellow-back{
+  background: yellow;
+}
+.white-back{
+  background: #fff;
+}
+.title-back{
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+}
+.goods-text{
+  font-size:70%;
+  margin-left: 3%; 
+} 

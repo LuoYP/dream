@@ -1,0 +1,7 @@
+<view style='width:{{width}}px;height:{{height}}px;'> 
+      <view class='whiteshowclass columnclass'>
+          <view style='margin-top:18%;'></view>
+          <text class='grey_text_mid'>如有疑问请拨打客服热线</text>
+          <text class='blue_text_middl'>13598209820</text>
+      </view>
+</view>

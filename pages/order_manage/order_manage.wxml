@@ -1,0 +1,38 @@
+<template name="each"> 
+        <text decode="{{true}}" space='{{true}}' class='blacksmalltext1'>{{title}}&nbsp;&nbsp;:&nbsp;&nbsp;</text>
+        <text class='greysmalltext'>{{msg}}</text> 
+</template>
+<template name="all">
+  <view style='margin-top:5%;'></view>
+  <view class='whitesmallback' style='padding-left:5%;padding-top:3%;padding-bottom:0%;'> 
+       <!-- <template is="each" data="{{...item}}"> </template>  wx:for="{{each}}" wx:key="{{index}}"-->
+       <view> 
+        <text decode="{{true}}" space='{{true}}' class='blacksmalltext1'>&nbsp;&nbsp;&nbsp;订单号&nbsp;&nbsp;:&nbsp;&nbsp;</text>
+        <text class='greysmalltext'>{{norder}}</text> 
+       </view>
+       <view> 
+        <text decode="{{true}}" space='{{true}}' class='blacksmalltext1'>商品名称&nbsp;&nbsp;:&nbsp;&nbsp;</text>
+        <text class='greysmalltext'>{{remark}}</text> 
+      </view>
+        <view> 
+        <text decode="{{true}}" space='{{true}}' class='blacksmalltext1'>订单金额&nbsp;&nbsp;:&nbsp;&nbsp;</text>
+        <text class='greysmalltext'>{{amount/100}}</text> 
+         </view>
+         <view> 
+        <text decode="{{true}}" space='{{true}}' class='blacksmalltext1'>订单状态&nbsp;&nbsp;:&nbsp;&nbsp;</text>
+        <text class='greysmalltext'>{{info}}</text> 
+        </view>
+        <view wx:if="{{state == 0 && usertype == 2}}">
+            <button bindtap='handreq' style='margin-top:5%;font-size:15px;' data-index='{{index}}'>处理当前请求</button>
+        </view> 
+  </view> 
+  <view style='padding-top:3%;background:#fff;'></view>
+</template>
+<view style='width:{{width}}px;height:{{height}}px;'>
+    <view wx:for="{{info}}" wx:key="{{index}}" hidden='{{!ishaveorder}}'>
+      <template is="all" data="{{...item,usertype}}"> </template>
+    </view>
+    <view style='height:10px;'></view>
+    <view  hidden='{{ishaveorder}}' class='shownogoosd' style='margin-left:5%;margin-top:5%;'>当前暂无订单</view>
+</view>
+

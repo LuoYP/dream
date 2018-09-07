@@ -1,0 +1,17 @@
+<view style='width:{{width}}px;height:{{height}}px;'>
+  <view class='margin-topmiddle'></view>
+  <view class='whitebackground'>
+          <view class='columnlayout'>
+             <text class='pinkbigtext'>￥{{currentgoods.price}}</text>
+              <view class='margin-topsmall'></view> 
+              <text class='greysmalltext' style='font-size:0.7em;'>{{pageshowtext.waitwhitdrawn}}</text>
+          </view>
+  </view>
+  <view class='margin-topmiddle'></view>
+  <view class='whitesmallback'> 
+        <text style='font-size:0.8em;color: #000;'>{{pageshowtext.mycard}}</text>
+        <!-- <text class='greysmalltext-right' style='color:black;'>{{pageshowtext.dayustr}}</text> -->
+        <image class='greysmalltext-right' src='/images/ic_back.png' style='width:10px;height:15px;margin-top:1.5%;'></image>
+  </view> 
+  <button class='foot_btn_green'>提现</button>
+</view>

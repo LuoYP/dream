@@ -1,0 +1,6 @@
+<view style='width:{{width}}px;height:{{height}}px;text-align:center;'>
+  <view class='columnlayout' style='margin-top:40%;'>
+    <image src='/images/ic_waitopen.png' style='width:{{height*0.23}}px;height:{{height*0.2}}px;'></image>
+     <text class='greysmalltext' style='margin-top:10px;'>页面正在开发中...</text>
+  </view> 
+</view>

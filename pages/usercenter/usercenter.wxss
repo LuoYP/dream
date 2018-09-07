@@ -1,0 +1,6 @@
+/* pages/usercenter/usercenter.wxss */
+.white-back{
+  background: #fff;
+  width: 100%;
+  height: 30%;
+}

@@ -1,0 +1,21 @@
+<view style="width:{{width}}px;height:{{height}}px;"> 
+   <map id="qqmap" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="{{scale}}" style="width:{{width}}px;height:{{height}}px;z-index:-1;" 
+    markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" show-location="true" bindregionchange="regionchange"
+    bindcallouttap="goseladdr"   bindmarkertap="doopenmaker"  ></map> 
+  
+     <cover-image src="/images/ic_gomylocation.png" bindtap="getlocation" style="width:{{width*0.1}}px;height:{{width*0.1}}px;position:fixed;bottom:25%;left:7%;z-index:0;" />  
+     <cover-image src="/images/ic_mapback.png"   class="imgclass"  /> 
+     
+     <cover-view class="hinttextclass" bindtap='show'  style='width:40%;height:10%;'>{{hint}}</cover-view>
+    <!-- <cover-image  src="/images/ic_usercenter.png"  style="width:{{width*0.2}}px;height:{{width*0.1}}px;position:fixed;bottom:25%;right:-5%;z-index:0;" />  
+     <block wx:if="{{!hasUserInfo && canIUse}}">
+          <cover-image src="/images/ic_my_logo.png" bindtap='openuser' style="width:{{width*0.08}}px;height:{{width*0.08}}px;border-radius:{{width*0.08}}px;position:fixed;bottom:25.5%;right:5%;z-index:0;" />
+     </block> 
+     <block wx:else> 
+       <cover-image src="{{userInfo.avatarUrl}}" bindtap='openuser' style="width:{{width*0.08}}px;height:{{width*0.08}}px;border-radius:{{width*0.08}}px;position:fixed;bottom:25.5%;right:5%;z-index:0;" />
+     </block>   -->
+        <cover-view class="whitesmclass" style="position:fixed;bottom:5%;right:32%;">剩余</cover-view>
+      <cover-view  class="whitebgclass" style="position:fixed;bottom:4%;right:13%;width:20%;text-align:right;">{{sparemeil}}</cover-view>
+      <cover-view  class="whitesmclass"  style="position:fixed;bottom:5%;right:5%;">{{unit}}</cover-view> 
+ 
+</view>
